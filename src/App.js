@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+// We'll add more components here as we create them
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App font-sans bg-gray-50"> {/* Using font-sans for default or you can customize */}
+      <Navbar />
+      <main>
+        <Hero />
+        {/* Other sections like TopDestinations will go here */}
+      </main>
     </div>
   );
 }
